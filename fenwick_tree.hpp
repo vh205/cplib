@@ -1,4 +1,3 @@
-// test
 template<class T> struct fenwick_tree {
     vector<T> bit;
     int n;
