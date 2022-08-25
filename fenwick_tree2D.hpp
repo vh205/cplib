@@ -1,7 +1,7 @@
 template<class T> struct fenwick_tree2D {
     vector<vector<T>> bit;
     int n, m;
-	
+	 
 	fenwick_tree2D(int _n, int _m) {
 		init(_n, _m);
     }
