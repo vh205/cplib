@@ -3,13 +3,13 @@ template<class T> struct fenwick_tree {
     int n;
  
     fenwick_tree(int _n) {
-		init(_n);
+	init(_n);
     }
  
-	void init(int _n) {
-		n = _n;
+    void init(int _n) {
+	n = _n;
         bit.assign(n, 0);
-	}
+    }
  
     fenwick_tree(vector<int> a) : fenwick_tree(a.size()) {
         for (size_t i = 0; i < a.size(); i++)
