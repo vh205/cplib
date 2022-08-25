@@ -1,9 +1,10 @@
+// test
 template<class T> struct fenwick_tree {
     vector<T> bit;
     int n;
  
     fenwick_tree(int _n) {
-	init(_n);
+        init(_n);
     }
  
     void init(int _n) {
