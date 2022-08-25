@@ -1,18 +1,19 @@
 template<class T> struct fenwick_tree2D {
     vector<vector<T>> bit;
     int n, m;
-
+	
 	fenwick_tree2D(int _n, int _m) {
 		init(_n, _m);
-	}
+    }
 
-	void init(int _n, int _m) {
-		n = _n, m = _m;
-		bit.resize(n);
-		for (auto &x : bit) {
+    void init(int _n, int _m) {
+       	n = _n, m = _m;
+	  	bit.resize(n);
+	  	for (auto &x : bit) {
 			x.assign(m, 0);
-		}
-	}
+	  	}
+   	}
+         
 
 	fenwick_tree2D(vector<vector<int>> a) : fenwick_tree2D(a.size(), a[0].size()) {
 		for (int i = 0; i < (int)a.size(); ++i) {
