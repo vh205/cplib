@@ -4,7 +4,7 @@ struct node {
     node *child[maxC];
 
     node() {
-        for (int i = 0; i < maxC; ++i) child[i] = nullptr
+        for (int i = 0; i < maxC; ++i) child[i] = nullptr;
     }
 };
 
