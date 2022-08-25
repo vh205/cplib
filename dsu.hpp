@@ -3,7 +3,7 @@ struct dsu {
     int comp = 0;
 
     dsu(int _n) {
-		init(_n);
+	init(_n);
     }
 
     void init(int n) {
