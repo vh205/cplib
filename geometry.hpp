@@ -32,29 +32,29 @@ inline namespace geometry {
 
 		}
 
-		point operator+(const point& p) const {
+		point operator + (const point& p) const {
 			return point(*this) += p;
 		}
 
-		point operator-(const point& p) const {
+		point operator - (const point& p) const {
 			return point(*this) -= p;
 		}
 
-		point operator*(const point& p) const {
+		point operator * (const point& p) const {
 			return point(*this) *= p;
 		}
 
-		point operator/(const point& p) const {
+		point operator / (const point& p) const {
 			return point(*this) /= p;
 
 		}
 	};
 
 	template<typename T>
-	point<T> operator+(T a, point<T> p) { return p + a; }
+	point<T> operator + (T a, point<T> p) { return p + a; }
 
 	template<typename T>
-	point<T> operator*(T a, point<T> p) { return p * a; }
+	point<T> operator * (T a, point<T> p) { return p * a; }
 
 	template<typename T>
 	T dot(point<T> p, point<T> q) { return p.x * q.x + p.y * q.y; }
@@ -80,17 +80,17 @@ inline namespace geometry {
 	}
 
 	template<typename T>
-	bool operator==(const point<T> &p, const point<T> &q) {
+	bool operator == (const point<T> &p, const point<T> &q) {
 		return p.x == q.x && p.y == q.y;
 	}
 
 	template<typename T>
-	istream& operator>>(istream &is, point<T> &p) {
+	istream& operator >> (istream &is, point<T> &p) {
 		return is >> p.x >> p.y;
 	}
 
 	template<typename T>
-	ostream& operator<<(ostream &os, const point<T> &p) {
+	ostream& operator << (ostream &os, const point<T> &p) {
 		return os << '(' << p.x << ',' << p.y << ')';
 	}
 }
