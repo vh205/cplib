@@ -27,7 +27,7 @@ template<class T> struct fenwick_tree {
         return sum(r) - sum(l - 1);
     }
  
-    void add(int p, int x) {
+    void add(int p, T x) {
         for (; p < n; p = p | (p + 1))
             bit[p] += x;
     }
