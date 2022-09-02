@@ -93,7 +93,7 @@ inline namespace geometry {
 	istream& operator >> (istream &is, point<T> &p) {
 		return is >> p.x >> p.y;
 	}
-
+	
 	template<typename T>
 	ostream& operator << (ostream &os, const point<T> &p) {
 		return os << '(' << p.x << ',' << p.y << ')';
