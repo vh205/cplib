@@ -85,6 +85,11 @@ inline namespace geometry {
 	}
 
 	template<typename T>
+	bool operator != (const point<T> &p, const point<T> &q) {
+        return !(p == q);
+	}
+
+	template<typename T>
 	istream& operator >> (istream &is, point<T> &p) {
 		return is >> p.x >> p.y;
 	}
